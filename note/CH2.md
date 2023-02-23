@@ -158,7 +158,7 @@ E[n,m]最少n次，最多m次
 ```
 
 ```c++
-//断言
+time//断言
 ^ 在字符串开头匹配
 $ 在字符串结尾匹配
 \b 单词边界
@@ -169,4 +169,40 @@ $ 在字符串结尾匹配
 //
 using(?=E\s+namespace)
 ```
+
+## 控件
+
+### 1 按钮组
+
+### 2 输入部件组
+
+```c++
+ 	QLabel *dataLabel = new QLabel(this);
+    QDateTime *dataTime = new QDateTime(QDateTime::currentDateTime());
+    dataLabel->setText(dataTime->date().toString());
+    dataLabel->show();
+```
+
+```c++
+//定时器
+//定时器结束做某些事情(slotTimeDone)
+QTimeer *timeClock = new QTimer(parent);
+connect(timeClock,SIGNAL(timeout()),this,SLOT(slotTimeDone()));
+```
+
+### 3显示控件组
+
+### 4空间间隔组
+
+>- Horizontal Spacer
+>- Vertical Spacer
+
+### 5布局管理组
+
+>- Vertical Layout
+>- Horizontal Layout
+>- Grild Layout
+>- Form Layout
+
+### 6容器组
 
